@@ -1,7 +1,7 @@
 # PHSX815_Project1
 ## Dice roller
 
-This repository contains the programs:
+Tthis repository contains the programs:
 
 - `DiceRoll.py` [Python] 
 - `DiceAnalysis.py` [Python] 
