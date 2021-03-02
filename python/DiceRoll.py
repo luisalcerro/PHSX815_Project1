@@ -19,22 +19,22 @@ if __name__ == "__main__":
     # default seed
     seed = 5555
 
-    # default single coin-toss probability for "1"
+    # default single dice roll probability for "1"
     prob1 = 0.166667
     
-    # default single coin-toss probability for "2"
+    # default single dice roll probability for "2"
     prob2 = 0.166667    
     
-    # default single coin-toss probability for "3"
+    # default single dice roll probability for "3"
     prob3 = 0.166667    
     
-    # default single coin-toss probability for "4"
+    # default single dice roll probability for "4"
     prob4 = 0.166667
     
-    # default single coin-toss probability for "5"
+    # default single dice roll probability for "5"
     prob5 = 0.166667    
 
-    # default number of coin tosses (per experiment)
+    # default number of dice rolls per experiment
     Ndice = 1
 
     # default number of experiments
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     if doOutputFile:
         outfile = open(OutputFileName, 'w')
         for e in range(0,Nexp):
-            for t in range(0,Ntoss):
+            for t in range(0,Ndice):
                 outfile.write(str(random.Categorical(prob1,prob2,prob3,prob4,prob5))+" ")
             outfile.write(" \n")
         outfile.close()
